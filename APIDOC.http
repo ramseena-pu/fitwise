@@ -1,0 +1,52 @@
+#api call to get data
+###
+GET  http://127.0.0.1:8000/foodlog/
+Accept: application/json
+
+#api call to create data
+###
+POST  http://127.0.0.1:8000/foodlog/
+Content-Type: application/json
+
+{
+    "title":"dosa",
+    "calorie":"300",
+    "meal_type":"breakfast",
+    "serving_size":3,
+    "created_at":"10:00",
+    "owner":"Hari"
+}
+
+#api call to retrieve data
+###
+GET http://127.0.0.1:8000/foodlog/2/
+Accept: application/json
+
+#api call to update data
+###
+PUT http://127.0.0.1:8000/foodlog/2/
+Content-Type: application/json
+
+{
+    "title":"Idly",
+    "calorie":"300",
+    "meal_type":"breakfast",
+    "serving_size":3,
+    "created_at":"10:00",
+    "owner":"Hari"
+}
+
+#api call to delete data
+###
+DELETE http://127.0.0.1:8000/foodlog/2/
+Content-Type: application/json
+
+#api call for creating user
+###
+POST  http://127.0.0.1:8000/register/
+Content-Type: application/json
+
+{"username":"ramseena",
+"email":"ramsi@gmail.com",
+"password":"ramsi@123"
+}
